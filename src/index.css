@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: oklch(0.82 0.16 78);
+  --color-ember: oklch(0.60 0.22 45);
+  --color-bg-dark: #070708;
+  --color-card-dark: rgba(18, 18, 22, 0.7);
+}
+
+body {
+  background-color: #070708;
+  color: #f3f4f6;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+/* Glassmorphic card style */
+.glass-card {
+  background: rgba(18, 18, 22, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Glowing text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, oklch(0.9 0.14 85), oklch(0.72 0.16 75));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-ember {
+  background: linear-gradient(135deg, oklch(0.82 0.16 78), oklch(0.60 0.22 45));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
